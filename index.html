@@ -1,31 +1,33 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Estate</title>
+    <title>Homes for Sale in Palos Verdes</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
         header {
-            background-color: #333;
+            background-color: #003366;
             color: white;
             padding: 1rem;
             text-align: center;
         }
         nav {
-            background-color: #555;
+            background-color: #00509e;
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             padding: 0.5rem 0;
         }
         nav a {
             color: white;
             margin: 0 1rem;
             text-decoration: none;
+            font-weight: bold;
         }
         nav a:hover {
             text-decoration: underline;
@@ -42,6 +44,33 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
             font-size: 2rem;
         }
+        .search-section {
+            padding: 2rem;
+            background-color: white;
+            text-align: center;
+        }
+        .search-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .search-section input[type="text"] {
+            width: 70%;
+            padding: 0.5rem;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        .search-section button {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            color: white;
+            background-color: #00509e;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .search-section button:hover {
+            background-color: #003366;
+        }
         .properties {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -52,6 +81,7 @@
             border: 1px solid #ddd;
             border-radius: 5px;
             overflow: hidden;
+            background-color: white;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         .property img {
@@ -65,12 +95,13 @@
         .property-details h3 {
             margin: 0;
             font-size: 1.5rem;
+            color: #00509e;
         }
         .property-details p {
             margin: 0.5rem 0;
         }
         footer {
-            background-color: #333;
+            background-color: #003366;
             color: white;
             text-align: center;
             padding: 1rem;
@@ -80,45 +111,50 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Your Dream Home</h1>
+        <h1>Find Your Dream Home in Palos Verdes</h1>
     </header>
     <nav>
         <a href="#">Home</a>
-        <a href="#">Listings</a>
+        <a href="#">Search</a>
         <a href="#">Contact</a>
         <a href="#">About Us</a>
     </nav>
     <section class="hero">
-        Find Your Perfect Property Today
+        Exclusive Homes for Sale in Palos Verdes
+    </section>
+    <section class="search-section">
+        <h2>Search for Homes</h2>
+        <input type="text" placeholder="Enter city, neighborhood, or ZIP code">
+        <button>Search</button>
     </section>
     <section class="properties">
         <div class="property">
             <img src="https://via.placeholder.com/300x200" alt="Property 1">
             <div class="property-details">
-                <h3>Luxury Apartment</h3>
-                <p>Price: $500,000</p>
-                <p>Location: New York, NY</p>
+                <h3>Luxury Estate</h3>
+                <p>Price: $2,500,000</p>
+                <p>Location: Palos Verdes, CA</p>
             </div>
         </div>
         <div class="property">
             <img src="https://via.placeholder.com/300x200" alt="Property 2">
             <div class="property-details">
-                <h3>Cozy Suburban Home</h3>
-                <p>Price: $350,000</p>
-                <p>Location: Austin, TX</p>
+                <h3>Modern Villa</h3>
+                <p>Price: $1,800,000</p>
+                <p>Location: Palos Verdes, CA</p>
             </div>
         </div>
         <div class="property">
             <img src="https://via.placeholder.com/300x200" alt="Property 3">
             <div class="property-details">
-                <h3>Beachfront Villa</h3>
-                <p>Price: $1,200,000</p>
-                <p>Location: Miami, FL</p>
+                <h3>Coastal Retreat</h3>
+                <p>Price: $3,200,000</p>
+                <p>Location: Palos Verdes, CA</p>
             </div>
         </div>
     </section>
     <footer>
-        <p>&copy; 2024 Real Estate Co. All rights reserved.</p>
+        <p>&copy; 2024 Palos Verdes Realty. All rights reserved.</p>
     </footer>
 </body>
 </html>
